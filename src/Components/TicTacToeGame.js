@@ -7,7 +7,6 @@ const TicTacToeGame = () => {
 
   const handleClick = (index) => {
     squares[index] = isXTurn ? "X" : "O";
-    setSquares(squares);
     setIsXTurn(!isXTurn);
   };
 
