@@ -1,6 +1,6 @@
 import React from "react";
 
-const square = ({ value, onClick }) => {
+const Square = ({ value, onClick }) => {
   return (
     <button onClick={onClick} className="square">
       {value}
@@ -8,4 +8,4 @@ const square = ({ value, onClick }) => {
   );
 };
 
-export default square;
+export default Square;

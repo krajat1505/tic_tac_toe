@@ -6,6 +6,7 @@ const TicTacToeGame = () => {
   const [isXTurn, setIsXTurn] = useState(true);
 
   const handleClick = (index) => {
+    if (squares[index]) return;
     squares[index] = isXTurn ? "X" : "O";
     setIsXTurn(!isXTurn);
   };
@@ -39,6 +40,7 @@ const TicTacToeGame = () => {
 
   const resetGame = () => {
     setSquares(Array(9).fill(null));
+    setIsXTurn(true);
   };
 
   return (
